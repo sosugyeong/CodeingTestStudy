@@ -10,6 +10,11 @@ public class Exercise5_10 {
 
         for (int i = 0; i < src.length(); i++) {
             char ch = src.charAt(i);
+            if (ch>=97 && ch <= 122) {
+                result += abcCode[ch-'a'];
+            } else {
+                result += numCode[ch-'0'];
+            }
 
             //code
         }
